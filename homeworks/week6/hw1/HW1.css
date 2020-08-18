@@ -1,0 +1,298 @@
+.navbar{
+    box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
+    
+}
+h2 {
+    margin: 0;
+}
+
+.navbar .wrapper{
+    background: white;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+
+
+.navbar__site-name{
+    color: #489846;
+    font-size: 36px;
+}
+
+.navbar__list{
+    list-style:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 18px;
+}
+
+.navbar__list li{
+    margin-left: 12px;
+    border-radius: 8px;
+    transition: background 0.1s;
+}
+
+.navbar__list li.active, .navbar__list li:hover{
+    background: #ff7286;
+}
+
+.navbar__list li.active a, .navbar__list li:hover a{
+    color: white;
+}
+
+.navbar__list li a{
+    text-decoration: none;
+    color: black;
+    padding: 12px 24px;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 20px;
+    padding: 0 12px;
+}
+
+.banner{
+    position: relative;
+    height: 350px;
+    background: url(/image/HW1bg.png) center/cover no-repeat;
+}
+
+.banner:after{
+    content: '';
+    position: absolute;
+    background: rgba(0,0,0,0.4);
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.banner h1{
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    margin: 0;
+    color: white;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+}
+
+.section{
+    text-align: center;
+    margin-top: 45px;
+}
+
+.section__title{
+    display: inline-block;
+    font-size: 36px;
+    border-left: solid 15px #a3dea2;
+    padding-left: 16px;
+    margin-bottom: 36px;
+}
+
+.section__desc{
+    font-size: 16px;
+    line-height: 2em;
+    margin: 0px 0 42px 0;
+}
+
+.button{
+    padding: 60px 80px;
+    font-size: 36px;
+    color: #3e613d;
+    display: inline-block;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.1s
+}
+
+.button:hover{
+    transform: scale(1.1)
+}
+
+.btn-order{
+    background: #a8e8e1;
+}
+
+.btn-query{
+    margin-left: 23px;
+    background: #f9f9b5;
+}
+
+.section__images{
+    display: flex;
+}
+
+.section__images div{
+    width: 25%;
+}
+
+.section__images img{
+    width: 100%;
+}
+
+.footer__top{
+    background: #e8efee;
+    padding: 32px ;
+    color: #484848;
+}
+
+.footer__info div+div{
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+.footer__bottom{
+    background: #35564b;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+}
+
+footer{
+    margin-top: 32px;
+}
+
+.footer__top .wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__site{
+    font-size: 36px;
+    color: #489846;
+}
+
+.section__comments{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+.comment+.comment{
+    margin-left: 15px;
+}
+
+.comment{
+    height:205px;
+    width: 565px;
+    position: relative;
+    box-shadow: -1.4px -1.4px 4px 0 #d8eaef;
+    border: solid 1px #c7e5ec;
+    border-radius: 5px;
+}
+
+.comment__image{
+    position: relative;
+    left: 50%;
+    transform:translate(-50%,-50%);
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.comment__image img{
+    width: 100%;
+    height: 100%;
+}
+
+.name{
+    position: relative;
+    left: 50%;
+    top: -45px;
+    transform:translate(-50%,0px);
+}
+
+.comment__image image{
+    background-attachment:fixed;
+    background-position: center;
+}
+
+.comment__content{
+    position: relative;
+    top: -30px;
+    padding: 0 15px 0 15px;
+}
+
+
+
+
+
+@media(max-width:768px){
+    .navbar .wrapper{
+        height: 120px;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .navbar__list {
+        display: flex;
+        width: 100%;
+    }
+    .navbar__list li{
+        flex: 1;
+        margin-left: 0px;
+        border-radius: 0px;
+        text-align: center;
+    }
+
+    .navbar__site-name {
+        margin-top: 10px;
+    }
+
+    .banner{
+        height: 250px;
+    }
+
+    .btn-query{
+        margin-left: 0;
+        margin-top: 16px;
+    }
+
+    .section__images{
+        flex-direction: column;
+    }
+
+    .section__images div {
+        width: 100%;
+    }
+
+    .footer__top .wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .footer__info{
+        margin-right: 0px;
+        margin-top: 16px;
+    }
+
+    .section__comments{
+        flex-direction: column;
+       
+    }
+
+    .comment+.comment{
+        margin-left: 0;
+        margin-top: 62px;
+    }
+
+    .comment{
+        width:100%;
+    }
+    
+
+}
+
+
+
+
+
