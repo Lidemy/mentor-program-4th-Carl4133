@@ -1,0 +1,32 @@
+.wrapper {
+    max-width: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.todo {
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    padding: 12px;
+}
+
+.todo:hover {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.todo__title {
+    /* 再想一下*/
+    flex: 1;
+}
+
+.todo__check {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+.todo.done .todo__title {
+    text-decoration: line-through;
+}
