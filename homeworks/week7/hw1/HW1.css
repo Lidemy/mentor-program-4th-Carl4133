@@ -17,7 +17,7 @@ h1 {
     font-weight: bold;
 }
 
-.subTitle {
+.title__detial {
     height: 13px;
     font-family: MicrosoftJhengHei;
     font-size: 14px;
@@ -30,7 +30,7 @@ h1 {
     color: #000000;
 }
 
-.subTitle+.subTitle {
+.title__detial+.title__detial {
     margin-top: 11px;
 }
 
@@ -75,7 +75,7 @@ h1 {
     font-size: 20px;
 }
 
-.required::after {
+.required .question__title:after {
     content: " *";
     color: #e74149;
 }
@@ -98,6 +98,14 @@ h1 {
 
 .radio__item {
     margin-top: 12px;
+}
+
+.insert__empty {
+    margin-top: 4px;
+    color: #e74149;
+    visibility: hidden;
+    position: absolute;
+    /*才不會占空間;不設top保持原位*/
 }
 
 footer {
