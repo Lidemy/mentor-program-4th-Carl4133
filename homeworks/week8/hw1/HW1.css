@@ -1,0 +1,234 @@
+.navbar {
+    box-shadow: -1.4px -1.4px 6px 0 #97a2a0;
+}
+
+h2 {
+    margin: 0;
+}
+
+.navbar .wrapper {
+    background: white;
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+}
+
+.navbar__site-name {
+    color: #489846;
+    font-size: 36px;
+}
+
+.navbar__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 18px;
+}
+
+.navbar__list li {
+    margin-left: 12px;
+    border-radius: 8px;
+    transition: background 0.1s;
+}
+
+.navbar__list li.active,
+.navbar__list li:hover {
+    background: #ff7286;
+}
+
+.navbar__list li.active a,
+.navbar__list li:hover a {
+    color: white;
+}
+
+.navbar__list li a {
+    text-decoration: none;
+    color: black;
+    padding: 12px 24px;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1280px;
+    margin: 0 20px;
+    padding: 0 12px;
+}
+
+.banner {
+    position: relative;
+    height: 500px;
+    background: url(games-bn.png) center/cover no-repeat;
+    /* background: url(flight.jpg) center/cover no-repeat; */
+    margin-top: 0%;
+    /* from huli 
+    height: calc(100vh - 300px);
+    */
+}
+
+.lottery__box {
+    position: absolute;
+    display: inline-block;
+    max-width: 500px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 16px;
+    background-color: white;
+    /* 可以不用給 用撐開的
+    height: 360px; */
+    /*from huli */
+    text-align: center;
+    padding: 20px 12px;
+}
+
+.lottery__subbox {
+    /*from huli */
+    display: flex;
+    align-items: flex-start;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    /* 這邊用會被劃掉，不知道為什麼
+    padding: 12px,0px */
+    border-bottom: solid 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 12px;
+}
+
+.lottery__title {
+    position: relative;
+    font-size: 24px;
+    color: #5ec1b6;
+    margin-bottom: 12px;
+}
+
+.lottery__dropbtn {
+    width: 80%;
+    border-radius: 8px;
+    background-color: #e62a45;
+    color: white;
+    /* left: 50%;
+    transform: translate(-50%, 0); */
+    /*from huli */
+    margin: 0 auto;
+    /* 一行未滿*/
+    cursor: pointer;
+    padding: 16px 0px;
+}
+
+h2 {
+    position: relative;
+    padding-top: 20%;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px;
+}
+
+.lottery__result__dropbtn {
+    max-width: 40%;
+    border-radius: 8px;
+    background-color: #e62a45;
+    color: white;
+    /* left: 50%;
+    transform: translate(-50%, 0); */
+    /*from huli */
+    margin: 0 auto;
+    /* 一行未滿*/
+    cursor: pointer;
+    text-align: center;
+    padding: 16px 0px;
+}
+
+.lottery__subtitle {
+    font-weight: bold;
+    font-size: 18px;
+    /*from huli */
+    width: 90px;
+}
+
+.lottery__detial {
+    text-align: left;
+    /*from huli */
+    /* `剩下都給你 */
+    flex: 1;
+    margin-left: 10px;
+}
+
+.footer__top {
+    background: #e8efee;
+    padding: 32px;
+    color: #484848;
+}
+
+.footer__info div+div {
+    margin-top: 10px;
+    margin-right: 16px;
+}
+
+.footer__bottom {
+    background: #35564b;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    font-size: 16px;
+}
+
+footer {
+    margin-top: 0px;
+}
+
+.footer__top .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__site {
+    font-size: 36px;
+    color: #489846;
+}
+
+@media(max-width:768px) {
+    .navbar .wrapper {
+        height: 156px;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 0px;
+    }
+    .navbar__list {
+        display: flex;
+        width: 100%;
+    }
+    .navbar__list li {
+        flex: 1;
+        margin-left: 0px;
+        border-radius: 0px;
+        text-align: center;
+    }
+    .navbar__site-name {
+        margin-top: 10px;
+    }
+    .banner {
+        height: 700px;
+    }
+    .lottery__box {
+        top: 42%;
+    }
+    .footer__top .wrapper {
+        flex-direction: column-reverse;
+    }
+    .footer__info {
+        margin-right: 0px;
+        margin-top: 16px;
+    }
+    .section__comments {
+        flex-direction: column;
+    }
+    .comment+.comment {
+        margin-left: 0;
+        margin-top: 62px;
+    }
+    .comment {
+        width: 100%;
+    }
+}
